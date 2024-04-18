@@ -8,4 +8,4 @@ spec:
   interval: 1m0s
   ref:
     branch: feature-1
-  url: https://github.com/snyaupaneHP/FluxCD
+  url: ssh://git@github.com/snyaupaneHP/FluxCD
