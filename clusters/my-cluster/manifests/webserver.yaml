@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  # Nginx Docker image
+        image: shital1999/nginx:1.1.0  # Nginx Docker image
         ports:
         - containerPort: 80  # Expose container port 80
 
@@ -25,7 +25,7 @@ metadata:
   name: my-nginx-service
 spec:
   selector:
-    app: nginx
+    app: shital1999/nginx:1.1.0
   ports:
   - protocol: TCP
     port: 80  # Service port to expose externally
