@@ -1,0 +1,24 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: image-update
+  namespace: flux-system
+spec:
+  git:
+    checkout:
+      ref:
+        branch: docker-demo
+    commit:
+      author:
+        email: shital@email.com
+        name: shital
+    push:
+      branch: docker-demo
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: docker-demo #agi banako git repository source jun chai use garne ho image update ko lagi
+  update:
+    path: ./image-wala #yo path ko deployment update garne ho 
+    strategy: Setters
