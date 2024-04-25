@@ -8,4 +8,6 @@ spec:
   interval: 1m0s
   ref:
     branch: docker-demo
-  url: https://github.com/snyaupaneHP/dd-repo.git
+  secretRef:
+    name: image-automation
+  url: ssh://git@github.com/snyaupaneHP/dd-repo.git
