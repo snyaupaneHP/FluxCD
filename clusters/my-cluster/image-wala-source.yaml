@@ -8,4 +8,4 @@ spec:
   interval: 1m0s
   ref:
     branch: docker-demo
-  url: ssh://git@github.com/snyaupaneHP/dd-repo.git
+  url: ssh://git@github.com:snyaupaneHP/dd-repo.git
